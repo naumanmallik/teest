@@ -3,7 +3,7 @@ const { uploadCloudinary } = require("./uploadCloudinary.util");
 
 const task = async () => {
   try {
-    const result = await uploadCloudinary("input3.jpg");
+    // const result = await uploadCloudinary("input3.jpg");
     console.log("Cron job executed at:", new Date().toLocaleString());
   } catch (error) {
     console.log("error", error);
