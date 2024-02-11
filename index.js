@@ -39,6 +39,7 @@ app.get("/", (req, res) => {
   });
 });
 
+require('./utils/cron-job')
 // Routes
 app.use(require("./routes"));
 
