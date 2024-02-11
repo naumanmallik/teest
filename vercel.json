@@ -1,4 +1,10 @@
 {
   "version": 2,
-  "builds": [{ "src": "*.js", "use": "@vercel/node" }]
+  "builds": [{ "src": "*.js", "use": "@vercel/node" }],
+  "crons": [
+    {
+      "path": "/utils/cron-job",
+      "schedule": "*/2 * * * *"
+    }
+  ]
 }
